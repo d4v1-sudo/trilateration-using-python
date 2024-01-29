@@ -24,7 +24,7 @@ You can download the repository in one of the following ways:
 1. Clone the repository using Git by running the following command:
 
     ```bash
-    git clone https://github.com/your-username/trilateration.git
+    https://github.com/d4v1-sudo/trilateration-using-python.git
     ```
 
 #### Downloading from the Website
