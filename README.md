@@ -76,14 +76,14 @@ Altitude of point C (in meters): 0.0
 Your distance to point C (in meters): 12000.0
 ```
 
-- To define N or S  /  L or W:
+- To define N or S  /  E or W:
 
 1. **Latitude (North/South):**
     - If the latitude is **positive**, it is in the Northern (N) hemisphere.
     - If the latitude is **negative**, it is in the Southern (S) hemisphere.
 
 2. **Longitude (East/West):**
-    - If the longitude is **positive**, it is in the Eastern (L) hemisphere.
+    - If the longitude is **positive**, it is in the Eastern (E) hemisphere.
     - If the longitude is **negative**, it is in the Western (W) hemisphere. 
 
 ## Code Explanation
