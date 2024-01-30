@@ -57,6 +57,35 @@ Before running the code, you need to install the necessary Python libraries. Ope
 
 4. The script will calculate and print the geographic coordinates of the unknown point.
 
+## Usage Example:
+
+```
+Latitude of point A: 37.7749
+Longitude of point A: -122.4194
+Altitude of point A (in meters): 0.0
+Your distance to point A (in meters): 10000.0
+
+Latitude of point B: 34.0522
+Longitude of point B: -118.2437
+Altitude of point B (in meters): 0.0
+Your distance to point B (in meters): 15000.0
+
+Latitude of point C: 40.7128
+Longitude of point C: -74.0060
+Altitude of point C (in meters): 0.0
+Your distance to point C (in meters): 12000.0
+```
+
+- To define N or S  /  L or W:
+
+1. **Latitude (North/South):**
+    - If the resulting latitude is positive, it is in the Northern (N) hemisphere.
+    - If the resulting latitude is negative, it is in the Southern (S) hemisphere.
+
+2. **Longitude (East/West):**
+    - If the resulting longitude is positive, it is in the Eastern (L) hemisphere.
+    - If the resulting longitude is negative, it is in the Western (W) hemisphere. 
+
 ## Code Explanation
 
 - The code converts the geodetic coordinates (latitude, longitude, and altitude) of the input points into Earth-Centered, Earth-Fixed (ECEF) coordinates.
