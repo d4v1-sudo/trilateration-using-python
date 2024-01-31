@@ -108,6 +108,10 @@ Ensure that you have installed the `numpy` library if it's not already installed
 
 This code is a valuable tool for determining the location of an unknown point on the Earth's surface based on distance measurements from known reference points.
 
+## Contributions
+
+Contributions are welcome! Feel free to open issues or send pull requests to enhance this project.
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
