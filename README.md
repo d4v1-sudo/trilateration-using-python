@@ -85,19 +85,33 @@ Your distance to point C (in km): 12000.0
 
 ## Code Explanation
 
-- The code converts the geodetic coordinates (latitude, longitude) of the input points into Earth-Centered, Earth-Fixed (ECEF) coordinates.
+This Python script is designed to calculate the coordinates of an unknown point on the Earth's surface using trilateration based on the distances to three known points (A, B, and C). The script incorporates measures of the Earth's polar and equatorial radii for improved accuracy.
 
-- It calculates the normal of the plane formed by the three known points by taking the cross product of vectors AB and AC.
+### Steps:
 
-- The distances to each known point from the trilateration point are computed using the dot product with the normal vector.
+1. **Input Known Points and Distances**: The user provides the latitude, longitude, and distance from the unknown point to each of the three known points (A, B, and C).
 
-- Finally, the code calculates the ECEF coordinates of the trilateration point and converts them back into geodetic coordinates to obtain the latitude, longitude.
+2. **Conversion to Radians**: The script converts the latitude and longitude values of the known points from degrees to radians, as trigonometric functions in Python's math library expect inputs in radians.
+
+3. **Cost Function**: The `cost_function` calculates the difference between the estimated distances from the unknown point to the known points and the actual measured distances. It uses the Numpy library for efficient array operations.
+
+4. **Optimization**: The `minimize` function from the Scipy library is used to minimize the cost function. It attempts to find the coordinates of the unknown point that minimize the difference between the estimated and measured distances.
+
+5. **Output**: Finally, the script prints the latitude and longitude coordinates of the unknown point.
 
 ## Improvements
 
-You can enhance this code by adding more comments to explain the calculations in detail and by validating the input values to ensure they are within valid ranges.
+1. **Input Validation**: Add input validation to ensure that the user provides valid latitude, longitude, and distance values.
 
-To reuse the geodetic-to-ECEF or ECEF-to-geodetic conversion functions in other projects, it's a good practice to place them in a separate module and import them.
+2. **Error Handling**: Implement error handling to handle cases where the optimization algorithm fails to converge or the input data is insufficient.
+
+3. **Optimization Algorithm**: Consider using a different optimization algorithm or fine-tuning the parameters of the existing one to potentially improve convergence and accuracy.
+
+4. **Modularization**: Break down the code into smaller, reusable functions for better maintainability and readability.
+
+5. **Documentation**: Include inline comments and docstrings to explain the purpose and functionality of each part of the code.
+
+6. **Unit Tests**: Write unit tests to verify the correctness of the code and ensure that future changes don't introduce regressions.
 
 ## Note
 
