@@ -2,7 +2,7 @@
 
 This Python code demonstrates how to perform trilateration on an oblate spheroid, such as the Earth. Trilateration is a method for determining an unknown location based on the distances from that location to known points.
 
-The code takes three known points, their latitudes, longitudes, altitudes, and distances to an unknown point. It then calculates the latitude, longitude, and altitude of the unknown point using the Earth's oblate spheroid model.
+The code takes three known points, their latitudes, longitudes, and distances to an unknown point. It then calculates the latitude, longitude of the unknown point using the Earth's oblate spheroid model.
 
 ## Dependencies
 
@@ -53,7 +53,7 @@ Before running the code, you need to install the necessary Python libraries. Ope
     python3 trilateration.py
     ```
 
-3. Follow the prompts to provide the coordinates and altitudes of reference points A, B, and C, as well as the distances from an unknown point to each of these points.
+3. Follow the prompts to provide the coordinates of reference points A, B, and C, as well as the distances from an unknown point to each of these points.
 
 4. The script will calculate and print the geographic coordinates of the unknown point.
 
@@ -62,18 +62,15 @@ Before running the code, you need to install the necessary Python libraries. Ope
 ```
 Latitude of point A: 37.7749
 Longitude of point A: -122.4194
-Altitude of point A (in meters): 0.0
-Your distance to point A (in meters): 10000.0
+Your distance to point A (in km): 10000.0
 
 Latitude of point B: 34.0522
 Longitude of point B: -118.2437
-Altitude of point B (in meters): 0.0
-Your distance to point B (in meters): 15000.0
+Your distance to point B (in km): 15000.0
 
 Latitude of point C: 40.7128
 Longitude of point C: -74.0060
-Altitude of point C (in meters): 0.0
-Your distance to point C (in meters): 12000.0
+Your distance to point C (in km): 12000.0
 ```
 
 - To define N or S  /  E or W:
@@ -88,13 +85,13 @@ Your distance to point C (in meters): 12000.0
 
 ## Code Explanation
 
-- The code converts the geodetic coordinates (latitude, longitude, and altitude) of the input points into Earth-Centered, Earth-Fixed (ECEF) coordinates.
+- The code converts the geodetic coordinates (latitude, longitude) of the input points into Earth-Centered, Earth-Fixed (ECEF) coordinates.
 
 - It calculates the normal of the plane formed by the three known points by taking the cross product of vectors AB and AC.
 
 - The distances to each known point from the trilateration point are computed using the dot product with the normal vector.
 
-- Finally, the code calculates the ECEF coordinates of the trilateration point and converts them back into geodetic coordinates to obtain the latitude, longitude, and altitude.
+- Finally, the code calculates the ECEF coordinates of the trilateration point and converts them back into geodetic coordinates to obtain the latitude, longitude.
 
 ## Improvements
 
