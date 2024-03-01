@@ -1,4 +1,4 @@
-# 🌎 Trilateration on an Oblate Spheroid (Earth) using Python
+# 🌎 Trilateration on an Oblate Spheroid (Earth) using Python and Haversine formula
 
 This Python code demonstrates how to perform trilateration on an oblate spheroid, such as the Earth. Trilateration is a method for determining an unknown location based on the distances from that location to known points.
 
