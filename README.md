@@ -128,4 +128,4 @@ Contributions are welcome! Feel free to open issues or send pull requests to enh
 This project is licensed under the [MIT License](LICENSE).
 
 
-![Hello !](https://api.visitorbadge.io/api/VisitorHit?user=d4v1-sudo&repo=trilateration-using-python&label=thanks%20for%20dropping%20in%20!&labelColor=%23000000&countColor=%23FFFFFF)
+<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fd4v1-sudo%2Ftrilateration-using-python"><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fd4v1-sudo%2Ftrilateration-using-python&label=Thanks%20for%20dropping%20in&labelColor=%23000000&countColor=%23FFFFFF" /></a>
