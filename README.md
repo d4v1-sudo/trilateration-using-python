@@ -24,7 +24,7 @@ You can download the repository in one of the following ways:
 1. Clone the repository using Git by running the following command:
 
     ```bash
-    https://github.com/d4v1-sudo/trilateration-using-python.git
+    git clone https://github.com/d4v1-sudo/trilateration-using-python.git
     ```
 
 #### Downloading from the Website
@@ -87,7 +87,7 @@ Distance from point C to the unknown point (in km): 12000.0
 
 This Python script is designed to calculate the coordinates of an unknown point on the Earth's surface using trilateration based on the distances to three known points (A, B, and C). The script incorporates measures of the Earth's polar and equatorial radii for improved accuracy.
 
-Graphical example of trilateration:
+Graphical demonstration of trilateration:
 
 ![Trilateration](trilateration.png)
 
