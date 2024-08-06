@@ -109,7 +109,7 @@ This code provides functions to convert between decimal and sexagesimal represen
 
 To use it correctly:
 1. Run the script.
-   ```python3 convert.py <-1 for decimal to sexagesimal or -2 for sexagesimal to decimal>```
+   ```python3 convert.py <"-1" for decimal to sexagesimal or "-2" for sexagesimal to decimal>```
 2. Follow the prompts:
    - For decimal to sexagesimal conversion, input latitude and longitude in decimal format (In the Southern hemisphere, use negative values for latitude, and in the Western hemisphere, use negative values for longitude). Example: `-15.7373` than `36.7289`
    - For sexagesimal to decimal conversion, input latitude and longitude in the specified sexagesimal format (N/S for latitude, and E/W for longitude). Example: `39º 42' 17'' N` than `22º 49' 52'' E`
