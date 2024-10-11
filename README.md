@@ -115,20 +115,6 @@ To use it correctly:
    - For sexagesimal to decimal conversion, input latitude and longitude in the specified sexagesimal format (N/S for latitude, and E/W for longitude). Example: `39º 42' 17'' N` than `22º 49' 52'' E`
 3. The script will output the converted coordinates.
 
-## Improvements
-
-1. **Input Validation**: Add input validation to ensure that the user provides valid latitude, longitude, and distance values.
-
-2. **Error Handling**: Implement error handling to handle cases where the optimization algorithm fails to converge or the input data is insufficient.
-
-3. **Optimization Algorithm**: Consider using a different optimization algorithm or fine-tuning the parameters of the existing one to potentially improve convergence and accuracy.
-
-4. **Modularization**: Break down the code into smaller, reusable functions for better maintainability and readability.
-
-5. **Documentation**: Include inline comments and docstrings to explain the purpose and functionality of each part of the code.
-
-6. **Unit Tests**: Write unit tests to verify the correctness of the code and ensure that future changes don't introduce regressions.
-
 ## Note
 
 - Remember, to use geographic coordinates in ```trilateration.py```, decimal format is required. I made ```convert.py``` precisely for type compatibility issues, as my codes do not accept the sexagesimal system (XXº XX' XX'' N/S/E/W). Then use ```convert.py``` for testing and conversions.
